@@ -6,6 +6,7 @@ const (
 	red   = "\033[31m"
 	reset = "\033[0m"
 	bold  = "\033[1m"
+	cyan  = "\036[1m"
 )
 
 // Color functions for better usage
@@ -14,6 +15,9 @@ func Green(text string) string {
 }
 
 func Red(text string) string {
+	return red + text + reset
+}
+func Cyan(text string) string {
 	return red + text + reset
 }
 
